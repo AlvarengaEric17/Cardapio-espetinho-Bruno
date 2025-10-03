@@ -1005,3 +1005,16 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+.food_section .box {
+  min-height: 430px;   /* altura mínima */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food_section .box .detail-box {
+  flex-grow: 1;  /* faz o conteúdo ocupar o espaço e alinhar */
+}
