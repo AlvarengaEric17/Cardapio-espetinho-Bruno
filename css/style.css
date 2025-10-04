@@ -155,7 +155,7 @@ a:focus {
 
 .navbar-brand {
   font-family: 'Dancing Script', cursive;
-  
+
 
 }
 
@@ -1047,7 +1047,5 @@ a:focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   background: rgba(27, 27, 27, 0.2);
-  /* camada escura */
 }
