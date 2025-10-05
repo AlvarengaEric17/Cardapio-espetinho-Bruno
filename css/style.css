@@ -146,6 +146,7 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+  background-color: #302f2f;
 }
 
 .header_section .container-fluid {
@@ -1041,11 +1042,87 @@ a:focus {
 
 
 
+
 .bg-box::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(27, 27, 27, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  /* camada escura */
 }
+
+
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
+  /* deixa o ícone branco */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* .bg-img{
+  background-image: url(../images//41.png) ;
+} */
+
+/* evita espaço extra por ser elemento inline */
+.bg-img {
+  overflow: hidden;
+  line-height: 0;
+  /* remove gap causado por img inline */
+}
+
+.bg-img img {
+  display: block;
+  /*  remove gap e garante que a img "cole" */
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+.bg-img {
+  width: 100%;
+  height: 800px;
+  /* ajuste a altura que quiser para desktop */
+  overflow: hidden;
+  /* corta o excesso */
+}
+
+.bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* mantém proporção e preenche o espaço */
+  display: block;
+  /* remove espaços em branco abaixo da imagem */
+}
+
+@media (max-width: 768px) {
+  .bg-img {
+    height: 400px; /* altura menor no celular */
+  }
+}
+
